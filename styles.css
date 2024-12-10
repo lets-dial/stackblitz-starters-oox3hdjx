@@ -1,0 +1,164 @@
+/* Resetting some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333; /* Dark text for readability on white background */
+  background-color: #fff; /* White background */
+  line-height: 1.6;
+}
+
+/* Container class to manage layout width */
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  background-color: #fff; /* White background for header */
+  color: #ff7f00; /* Orange text */
+  padding: 40px 0;
+  text-align: center;
+  border-bottom: 4px solid #ff7f00; /* Orange border at the bottom */
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #ff7f00;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #333; /* Dark text for readability */
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+nav a {
+  color: #333; /* Dark text color */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff7f00; /* Orange hover effect */
+  text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+  margin: 40px 0;
+}
+
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ff7f00; /* Orange heading */
+}
+
+section p,
+section ul {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #333; /* Dark text for readability */
+}
+
+section ul {
+  list-style-type: none;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+/* Links in the content */
+section a {
+  color: #ff7f00; /* Orange links */
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* Feature List */
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  width: 23%;
+  background-color: #f9f9f9; /* Light background for feature items */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.feature-item h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #ff7f00; /* Orange headings */
+}
+
+.feature-item p {
+  font-size: 1em;
+  color: #333; /* Dark text for readability */
+}
+
+/* Hover effect for feature items */
+.feature-item:hover {
+  background-color: #f1f1f1; /* Slightly lighter background on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 4px solid #ff7f00; /* Orange border at the top */
+}
+
+footer a {
+  color: #ff7f00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .feature-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
